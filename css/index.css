@@ -30,10 +30,3 @@ label {
    color:rgb(54, 163, 81);
    font-weight: bolder;
 }
-
-#signintext{
-   position:relative;
-   left: 25%;
-   font-weight: bold;
-   font-size:20px;
-}
