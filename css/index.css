@@ -1,0 +1,39 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+                                 
+
+label {
+   font-weight: bold;
+   background-color: rgba(139, 133, 133, 0.363);
+   border-radius:5px;
+   padding: 10px;
+}
+#b{
+ 
+   width:100%;
+   padding:1%;
+   box-shadow: 1px 1px 1px 1px grey;
+}
+#b:hover{
+   background-color: white;
+   color:rgb(54, 163, 81);
+   font-weight: bolder;
+}
+
+#signintext{
+   position:relative;
+   left: 25%;
+   font-weight: bold;
+   font-size:20px;
+}
