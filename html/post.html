@@ -14,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <style>        
     </style>     
 </head>
@@ -127,7 +127,7 @@
 <div class="blogAuthor">
 
     <!-- Insert code for Edit/Save button and  -->
-    <button class="btn" id="edit" onclick="editable(blogBody)">Edit &nbsp<i class="material-icons" style="font-size: 15px;">edit</i></button>
+    <div id="bedit"><button class="btn" id="edit" onclick="editable()">Edit &nbsp<i class="material-icons" style="font-size: 15px;">edit</i></button></div>
 
     <p>Jimi</p>
 </div>
@@ -139,7 +139,15 @@
 </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
-
+    <button class="btn" id="like" onclick="like()"><i class="glyphicon glyphicon-thumbs-up" style="font-size:20px;"></i>&nbsp Like</button>
+    <p id ="likestatement" style="margin-top: 15px;margin-left: 10px">Be the first one to like this!</p>
+    <textarea rows="3" style="width: 90%;margin-left: 1%" placeholder="Leaves a comment ..." id="text" value=""></textarea><br />
+    <button class="btn" id="comment" onclick="comment(text)">Comment</button>
+    <h5 style="font-weight:bold;margin-left:1%;margin-top:1%;"> ALL COMMENTS</h5>
+    <h6 style="font-weight:bold;margin-left:1%;margin-top:1%;" id="nocomment"> No comments yet!!!</h6>
+    <div id="commentBox">
+        <div id="t01"></div>
+    </div>
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             
     </script>

@@ -1,10 +1,10 @@
+
 .blogTite {
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
     position: relative;
-    left:35%;
-    border:1px solid rgb(235, 110, 151);
+    left:38%;
     width:300px;
     padding: 0 2%;
 }
@@ -29,4 +29,33 @@
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     right:2%;
+    box-shadow: 0 4px 8px 0 rgba(235, 110, 151, 0.2), 0 6px 20px 0 rgba(235, 110, 151, 0.19);
+}
+#like{
+
+    color:white;
+    font-size:18px;
+    padding: 0.5% 1%;
+    background-color: rgb(235, 110, 151);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left:1%;
+    top:0.5%;
+   box-shadow: 0 4px 8px 0 rgba(235, 110, 151, 0.2), 0 6px 20px 0 rgba(235, 110, 151, 0.19);
+}
+#comment{
+    color:white;
+   padding: 0.5%;
+    background-color: rgb(235, 110, 151);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left:1%;
+    top:0.5%;
+   box-shadow: 0 4px 8px 0 rgba(235, 110, 151, 0.2), 0 6px 20px 0 rgba(235, 110, 151, 0.19);
+}
+#commentBox{
+    background-color: rgba(179, 152, 152, 0.19);
+    padding: 10px;
+    width:90%;
+    margin-left:1%;
 }
