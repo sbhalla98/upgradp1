@@ -3,6 +3,8 @@ function editable(){
     
     document.getElementById("blogBody").contentEditable = "true";
     document.getElementById("blogTitleNew").contentEditable = "true";
+    document.getElementById("blogBody").focus();
+    document.getElementById("blogTitleNew").focus();
     document.getElementById("bedit").innerHTML =   '<button class="btn" id="edit" onclick="noneditable(blogBody)">'+"Save" +"&nbsp<i class='material-icons' style='font-size: 15px;'>save</i></button>";
   
 
@@ -33,7 +35,8 @@ function comment(id){
         alert('!invalid comment!');
     }
     else{
- document.getElementById("t01").innerHTML += '<div style="background-color:white;padding:10px;margin:1%;margin-bottom:0px;">'+id.value+'</div>';
+      var earlierComment = document.getElementById("t01").innerHTML;
+ document.getElementById("t01").innerHTML ='<div style="background-color:white;padding:10px;margin:1%;margin-bottom:0px;">'+id.value+'</div>' + earlierComment;
  document.getElementById("text").value = x; 
     }   
 }
