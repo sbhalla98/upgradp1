@@ -3,8 +3,8 @@ function editable(){
     
     document.getElementById("blogBody").contentEditable = "true";
     document.getElementById("blogTitleNew").contentEditable = "true";
-    document.getElementById("blogBody").focus();
     document.getElementById("blogTitleNew").focus();
+    document.getElementById("blogBody").focus();
     document.getElementById("bedit").innerHTML =   '<button class="btn" id="edit" onclick="noneditable(blogBody)">'+"Save" +"&nbsp<i class='material-icons' style='font-size: 15px;'>save</i></button>";
   
 
