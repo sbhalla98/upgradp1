@@ -19,6 +19,7 @@ function noneditable(){
 var c = 0;
 function like(){
   c++;
+  document.getElementById("like").innerHTML = '<i class="fa fa-thumbs-up" style="font-size:24px"></i>' + " Liked";
   if(c==1){
   document.getElementById("likestatement").innerHTML = c + " person likes this!";
   }
