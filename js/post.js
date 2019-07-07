@@ -30,12 +30,12 @@ function like(){
 }
 var x = document.getElementById("text").defaultValue;
 function comment(id){
-    document.getElementById("nocomment").style.display = "none";
-    document.getElementById("commentBox").style.display = "block";
     if(id.value == ""){
         alert('!invalid comment!');
     }
     else{
+      document.getElementById("nocomment").style.display = "none";
+      document.getElementById("commentBox").style.display = "block";
       var earlierComment = document.getElementById("t01").innerHTML;
  document.getElementById("t01").innerHTML ='<div style="background-color:white;padding:10px;margin:1%;margin-bottom:0px;">'+id.value+'</div>' + earlierComment;
  document.getElementById("text").value = x; 

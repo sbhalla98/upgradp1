@@ -4,13 +4,11 @@
     height: 50%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 10px 0 10px 0;
     float:left;
     border-radius: 15px;
-    margin-left:6.5%;
-    
+    margin-left:7%;
 }
-    
 .post-left {
         width: 15%;            
         max-width: 15%;
@@ -62,20 +60,14 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
-    margin: 0 !important;
     color: #fff;
     background-color: orange;
-    background-size: 2000% 2000%;
+   background-size: 2000% 2000%;*/
 }
+
 .allPostsContainer {
     height: 100%;
     width: 100%;
-
-}
-@media screen and (max-width: 641px){
-    .post{
-        width : 100%;
-    }
 
 }
 .bd{
@@ -104,3 +96,20 @@ body {
     color:rgb(54, 163, 81);
     font-weight: bolder;
  }
+
+  @media screen and (max-width: 600px) {
+    .post{
+        width:100% !important ;
+        margin-left: 0px !important;
+      }
+  }
+  
+  @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .post{
+        width:100% !important ;
+        margin-left: 0px !important;
+      }
+      body{
+          margin:0;
+      }
+}
